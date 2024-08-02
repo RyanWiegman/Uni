@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+
+        {% if title%}
+            <title>FRL - {{ title }}</title>
+        {% else %}
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>Home Page</title>
+            <meta name="description" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="">
+        {% endif %}
+    </head>
+    <body>
+        <header class="site-header">
+            <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+              <div class="container">
+                <a class="navbar-brand mr-4" href="/">Facial Recogntion Lockbox</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggle">
+                  <div class="navbar-nav mr-auto">
+                    <a class="nav-item nav-link" href="/">Home</a>
+                    <!-- <a class="nav-item nav-link" href="/about">About</a> -->
+                  </div>
+                  <!-- Navbar Right Side -->
+                  <div class="navbar-nav">
+                    
+                  </div>
+                </div>
+              </div>
+            </nav>
+        </header>
+
+        <main role='main' class='container'>
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+                <div class="col-md-4">
+                    <div class="content-section">
+                        <h3>Documents</h3>
+                            <ul>
+                                <li><a class="nav-item nav-link" href="/Initial_Block_Document">Initial and Block Documents</a></li>
+                                <li><a class="nav-item nav-link" href="/senior_design">Senior Design D&C</a></li>
+                                <li><a class="nav-item nav-link" href="/CDR">Critical Design Review</a></li>
+                                <li><a class="nav-item nav-link" href="/conference_paper">Conference Paper</a></li>
+                                <li><a class="nav-item nav-link" href="/final_documentation">Final Documentation</a></li>
+                            </ul>
+                        <h3>Videos</h3>
+                            <ul>
+                                <li><a class="nav-item nav-link" href="/cdr_video">CDR Presentation</a></li>
+                                <li><a class="nav-item nav-link" href="/midterm_demo_video">Midterm Demo</a></li>
+                                <li><a class="nav-item nav-link" href="/final_presentation">Final Presentation</a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <script src="" async defer></script>
+    </body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

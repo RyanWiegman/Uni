@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class= 'content-section'>
+        {% for temp in name %}
+        <legend> {{ temp }} </legend>
+        <div class= 'content-section'>
+            {% for food in order %}
+                {% if temp == food.userID %}
+                    <p style= font-size:25px> {{ food.orderName }} </p>
+                    <p>{{ food.description }} </p>
+                    <p>PAID</p>
+                {% endif %}
+            {% endfor %}
+        <form action="" method="POST" ><button class="btn btn-danger" type="submit" name="finish" value="{{  temp  }}"><span class="glyphicon glyphicon-trash"></span> Serve </button> </form>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock content %}

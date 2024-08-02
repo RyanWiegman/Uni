@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div>
+        <h1>Facial Recogntion Lockbox</h1>
+    </div><hr>
+
+    <div>
+        <h3>Project Description</h3>
+        <p>
+            Our main goal in creating a Facial Recognition Lockbox is to cut down the rate of package theft for at-home shoppers, 
+            while simultaneously using the technology of today to create a secure and easy-to-use lockbox. 
+            Our biggest component is the artificial intelligence program that we are using to allow owners to access the Lockbox. 
+            To enable this, a camera will be mounted to the Lockbox to take pictures of the person in front of the box. 
+            Comparing this to the picture the owner uploaded to our database, if the AI program output comes back as a match, then the Lockbox will open. 
+            The Lockbox will also be equipped with a mobile application. Users will be able to create accounts and upload pictures to the database. 
+            The application also enables notifications for packages arriving and security alerts sent straight to the user's phone. 
+            Finally, we will be using two different “brains” to operate the Lockbox. The first is a Raspberry pi4 and the other is an MSP430FR6989. 
+            The Raspberry pi4 will be the focal point for the AI and the camera, holding the entire AI program on it. The MSP430 will notify all other hardware, 
+            for example locking and unlocking the locking mechanism or letting the pi4 know when to start scanning for a person.
+            Our main objective is to cut down on the number of packages stolen from porches. By implementing all of these components, we believe our Lockbox will achieve this
+        </p>
+    </div><br>
+    
+    <h3>Developers</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="content-section">
+                <center><img src= "static/images/Picture_senior_design.png" alt="Ryan Wiegman" width="75" height="75"></center>
+                <p>Ryan Wiegman is currently a senior at University of Central Florida,
+                    working towards completing a degree in computer engineering. 
+                    Ryan's future goals after graduating is to find a job in software development, with a focus on artificial intelligence.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="content-section">
+                <center><img src= "static/images/bryce_senior_photo.png" alt="Bryce Dere" width="75" height="75"></center>
+                <p>Bryce Dere is a senior studying Electrical Engineering on the Signal Analysis & Communications 
+                    Track at the University of Central Florida. He is graduating in the Summer 2022 semester and is planning to seek 
+                    employment in the development of music technology.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="content-section">
+                <center><img src= "static/images/Julian_senior_photo.png" alt="Julian Boaz" width="75" height="75"></center>
+                <p>Julian Boaz is a 23 year old Computer Engineering student attending the University of Central Florida. 
+                    Julian prefers working on software and specifically machine learning and artificial intelligence. 
+                    He has accepted a position at Lockheed Martin working on the training simulator 
+                    for the F-35 project at Rotary and Mission Systems in which upon graduating he will begin full time.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="content-section">
+                <center><img src= "static/images/che_senior_photo.png" alt="Che' baptiste" width="75" height="75"></center>
+                <p>Che’ Baptiste is a computer engineer hoping to continue polishing his programming skills while working with LexisNexis.
+                    He plans on continuing his education by earning a master’s degree in computer science soon after graduation.
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

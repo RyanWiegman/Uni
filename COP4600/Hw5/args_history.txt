@@ -1,0 +1,6 @@
+coppy test.txt t.txt 
+ls 
+coppy test.txt /home/ryan/COP4600/Hw5/test/t.txt 
+coppy test.txt t.txt 
+coppy nt.txt t.txt 
+coppy test.txt /home/ryan/COP4600/Hw5/t/t.txt 
